@@ -1,17 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/math/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/math/" rel="alternate" type="text/html" /><updated>2021-09-24T16:34:02+08:00</updated><id>http://localhost:4000/math/feed.xml</id><title type="html">数学 Math</title><subtitle></subtitle><entry><title type="html">Math Exercises</title><link href="http://localhost:4000/math/2021-09-23/extra-credit/math-exercises" rel="alternate" type="text/html" title="Math Exercises" /><published>2021-09-23T21:00:00+08:00</published><updated>2021-09-23T21:00:00+08:00</updated><id>http://localhost:4000/math/2021-09-23/extra-credit/math-exercises</id><content type="html" xml:base="http://localhost:4000/math/2021-09-23/extra-credit/math-exercises">&lt;h2 id=&quot;1&quot;&gt;1.&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/math/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/math/" rel="alternate" type="text/html" /><updated>2021-09-24T21:18:03+08:00</updated><id>http://localhost:4000/math/feed.xml</id><title type="html">数学 Math</title><subtitle></subtitle><entry><title type="html">Math Exercises</title><link href="http://localhost:4000/math/2021-09-23/extra-credit/math-exercises" rel="alternate" type="text/html" title="Math Exercises" /><published>2021-09-23T21:00:00+08:00</published><updated>2021-09-23T21:00:00+08:00</updated><id>http://localhost:4000/math/2021-09-23/extra-credit/math-exercises</id><content type="html" xml:base="http://localhost:4000/math/2021-09-23/extra-credit/math-exercises">&lt;h2 id=&quot;1&quot;&gt;1.&lt;/h2&gt;
 
 \[1 + {1 \over 1 + 2} + {1 \over 1 + 2 + 3} + {1 \over 1 + 2 + 3 + 4} + ... + {1 \over 1 + 2 + 3 + 4 + ... + 100}\]
 
+&lt;hr /&gt;
+
+&lt;p&gt;解答如下：&lt;/p&gt;
+
 &lt;p&gt;从 \({1 \over 1 + 2}\) 到 \({1 \over 1 + 2 + 3 + 4 + ... + 100}\) 的分母，都是多项式求和。求和公式是 \({ n * (a_1 + a_n) \over 2 }\) 。所以有：&lt;/p&gt;
 
-\[{1 \over a_1 + ... + a_n} = { 2 \over n * (a_1 + a_n) }\]
+\[{1 \over a_1 + ... + a_n} = { 2 \over n * (a_1 + a_n)}\]
 
-&lt;p&gt;其中 \(a_1 = 1\)。&lt;/p&gt;
+&lt;p&gt;其中 \(a_1 = 1\)，\(a_n = n\)，于是有：&lt;/p&gt;
+
+\[{ 1 \over n * (a_1 + a_n) } = {1 \over n * (n + 1)}\]
 
 &lt;p&gt;这里牵涉到一个裂项公式：&lt;/p&gt;
 
-\[{1 \over n * (1 + n) } =  {1 \over n} - {1 \over (n + 1)}\]
+\[{1 \over n * (n + 1)} =  {1 \over n} - {1 \over (n + 1)}\]
+
+&lt;p&gt;推导如下：&lt;/p&gt;
+
+&lt;blockquote&gt;
+\[{1 \over n * (n + 1)}\]
+
+  &lt;p&gt;= \({(1 + n - n)} \over {n * (n + 1)}\)&lt;/p&gt;
+
+  &lt;p&gt;= \({(n + 1) - n} \over {n * (n + 1)}\)&lt;/p&gt;
+
+  &lt;p&gt;= \({(n + 1) \over n * (n + 1)} - {n \over n * (n + 1)}\)&lt;/p&gt;
+
+  &lt;p&gt;= \({1 \over n} - {1 \over (n + 1)}\)&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h2 id=&quot;2&quot;&gt;2.&lt;/h2&gt;
 
-\[{1 \over 1 * 11} + {1 \over 11 * 21} + {1 \over 21 * 31} + ... + {1 \over 2011 * 2021}\]</content><author><name></name></author><category term="extra-credit" /><summary type="html">1.</summary></entry></feed>
+\[{1 \over 1 * 11} + {1 \over 11 * 21} + {1 \over 21 * 31} + ... + {1 \over 2011 * 2021}\]
+
+&lt;hr /&gt;</content><author><name></name></author><category term="extra-credit" /><summary type="html">1.</summary></entry></feed>

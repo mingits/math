@@ -52,19 +52,41 @@
 
 \[1 + {1 \over 1 + 2} + {1 \over 1 + 2 + 3} + {1 \over 1 + 2 + 3 + 4} + ... + {1 \over 1 + 2 + 3 + 4 + ... + 100}\]
 
+<hr />
+
+<p>解答如下：</p>
+
 <p>从 \({1 \over 1 + 2}\) 到 \({1 \over 1 + 2 + 3 + 4 + ... + 100}\) 的分母，都是多项式求和。求和公式是 \({ n * (a_1 + a_n) \over 2 }\) 。所以有：</p>
 
-\[{1 \over a_1 + ... + a_n} = { 2 \over n * (a_1 + a_n) }\]
+\[{1 \over a_1 + ... + a_n} = { 2 \over n * (a_1 + a_n)}\]
 
-<p>其中 \(a_1 = 1\)。</p>
+<p>其中 \(a_1 = 1\)，\(a_n = n\)，于是有：</p>
+
+\[{ 1 \over n * (a_1 + a_n) } = {1 \over n * (n + 1)}\]
 
 <p>这里牵涉到一个裂项公式：</p>
 
-\[{1 \over n * (1 + n) } =  {1 \over n} - {1 \over (n + 1)}\]
+\[{1 \over n * (n + 1)} =  {1 \over n} - {1 \over (n + 1)}\]
+
+<p>推导如下：</p>
+
+<blockquote>
+\[{1 \over n * (n + 1)}\]
+
+  <p>= \({(1 + n - n)} \over {n * (n + 1)}\)</p>
+
+  <p>= \({(n + 1) - n} \over {n * (n + 1)}\)</p>
+
+  <p>= \({(n + 1) \over n * (n + 1)} - {n \over n * (n + 1)}\)</p>
+
+  <p>= \({1 \over n} - {1 \over (n + 1)}\)</p>
+</blockquote>
 
 <h2 id="2">2.</h2>
 
 \[{1 \over 1 * 11} + {1 \over 11 * 21} + {1 \over 21 * 31} + ... + {1 \over 2011 * 2021}\]
+
+<hr />
 
   </div><a class="u-url" href="/math/2021-09-23/extra-credit/math-exercises" hidden></a>
 </article>
