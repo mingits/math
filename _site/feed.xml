@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/math/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/math/" rel="alternate" type="text/html" /><updated>2021-09-25T16:17:37+08:00</updated><id>http://localhost:4000/math/feed.xml</id><title type="html">数学题集</title><subtitle></subtitle><entry><title type="html">Q1</title><link href="http://localhost:4000/math/2021-09-23/extra-credit/question1" rel="alternate" type="text/html" title="Q1" /><published>2021-09-23T21:00:00+08:00</published><updated>2021-09-23T21:00:00+08:00</updated><id>http://localhost:4000/math/2021-09-23/extra-credit/question1</id><content type="html" xml:base="http://localhost:4000/math/2021-09-23/extra-credit/question1">&lt;h2 id=&quot;题目&quot;&gt;题目&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/math/feed.xml" rel="self" type="application/atom+xml" /><link href="/math/" rel="alternate" type="text/html" /><updated>2021-09-25T16:21:56+08:00</updated><id>/math/feed.xml</id><title type="html">数学题集</title><subtitle></subtitle><entry><title type="html">Q1</title><link href="/math/2021-09-23/extra-credit/Q1" rel="alternate" type="text/html" title="Q1" /><published>2021-09-23T21:00:00+08:00</published><updated>2021-09-23T21:00:00+08:00</updated><id>/math/2021-09-23/extra-credit/Q1</id><content type="html" xml:base="/math/2021-09-23/extra-credit/Q1">&lt;h2 id=&quot;题目&quot;&gt;题目&lt;/h2&gt;
 
 \[1 + {1 \over 1 + 2} + {1 \over 1 + 2 + 3} + ... + {1 \over 1 + 2 + 3 + ... + 100}\]
 
@@ -41,7 +41,7 @@
 &amp;amp;= {1 + 2 \left({1 \over 2} - {1 \over 101}\right)} \\
 &amp;amp;= {1 + 1 - \frac{2}{101} } \\
 &amp;amp;= 1 {99 \over 101} 
-\end{align}\]</content><author><name></name></author><category term="extra-credit" /><summary type="html">题目</summary></entry><entry><title type="html">Q2</title><link href="http://localhost:4000/math/2021-09-23/extra-credit/question2" rel="alternate" type="text/html" title="Q2" /><published>2021-09-23T21:00:00+08:00</published><updated>2021-09-23T21:00:00+08:00</updated><id>http://localhost:4000/math/2021-09-23/extra-credit/question2</id><content type="html" xml:base="http://localhost:4000/math/2021-09-23/extra-credit/question2">&lt;h2 id=&quot;题目&quot;&gt;题目&lt;/h2&gt;
+\end{align}\]</content><author><name></name></author><category term="extra-credit" /><summary type="html">题目</summary></entry><entry><title type="html">Q2</title><link href="/math/2021-09-23/extra-credit/Q2" rel="alternate" type="text/html" title="Q2" /><published>2021-09-23T21:00:00+08:00</published><updated>2021-09-23T21:00:00+08:00</updated><id>/math/2021-09-23/extra-credit/Q2</id><content type="html" xml:base="/math/2021-09-23/extra-credit/Q2">&lt;h2 id=&quot;题目&quot;&gt;题目&lt;/h2&gt;
 
 \[{1 \over 1 \cdot 11} + {1 \over 11 \cdot 21} + {1 \over 21 \cdot 31} + ... + {1 \over 2011 \cdot 2021}\]
 
@@ -51,7 +51,7 @@
 
 \[1 \over n(n + 10)\]
 
-&lt;p&gt;&lt;a href=&quot;/math/2021-09-23/extra-credit/question1&quot;&gt;上一题&lt;/a&gt;中所使用的公式 ( \({\frac{1}{n(n + 1)}} = {\frac{1}{n}} - {\frac{1}{n + 1}}\) ) 与本题中的 \(1 \over n(n + 10)\) 颇为形似。故该式可推导为：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/math/2021-09-23/extra-credit/Q1&quot;&gt;上一题&lt;/a&gt;中所使用的公式 ( \({\frac{1}{n(n + 1)}} = {\frac{1}{n}} - {\frac{1}{n + 1}}\) ) 与本题中的 \(1 \over n(n + 10)\) 颇为形似。故该式可推导为：&lt;/p&gt;
 
 &lt;blockquote&gt;
 
@@ -81,7 +81,7 @@
 
 &lt;h2 id=&quot;推论&quot;&gt;推论&lt;/h2&gt;
 
-&lt;p&gt;根据&lt;a href=&quot;/math/2021-09-23/extra-credit/question1&quot;&gt;上一题&lt;/a&gt;中的：&lt;/p&gt;
+&lt;p&gt;根据&lt;a href=&quot;/math/2021-09-23/extra-credit/Q1&quot;&gt;上一题&lt;/a&gt;中的：&lt;/p&gt;
 
 \[{1 \over n (n + 1)} =  {1 \over n} - {1 \over (n + 1)}\]
 
