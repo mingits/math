@@ -9,6 +9,54 @@ mathjax: true
 
 ## 题目
 
-$$ {1 \over 1 * 11} + {1 \over 11 * 21} + {1 \over 21 * 31} + ... + {1 \over 2011 * 2021} $$
+$$ {1 \over 1 \cdot 11} + {1 \over 11 \cdot 21} + {1 \over 21 \cdot 31} + ... + {1 \over 2011 \cdot 2021} $$
 
 ## 解答
+
+此题中的多项式中每个单项，可以写成：
+
+$$ 1 \over n(n + 10) $$
+
+[上一题]({{ site.baseurl }}{% post_url 2021-09-23-math-exercise-1 %})中所使用的公式 ( $$ {\frac{1}{n(n + 1)}} = {\frac{1}{n}} - {\frac{1}{n + 1}} $$ ) 与本题中的 $$ 1 \over n(n + 10) $$ 颇为形似。故该式可推导为：
+
+> 
+> $$
+> \begin{align}
+> { 1 \over n (n + 10) } 
+> &= { { ( 10 + n - n ) \over {n (n + 10)}} \cdot { 1 \over 10 } } \\
+> &= { { {(n + 10) - n} \over {n (n + 10)} } \cdot { 1 \over 10 } } \\
+> &= { \left({ (n + 10) \over n (n + 10) } - { n \over n (n + 10) }\right) \cdot { 1 \over 10 } } \\
+> &= \left( { 1 \over n } - { 1 \over {n + 10} } \right) \cdot { 1 \over 10 }
+> \end{align}
+> $$
+
+故有：
+
+$$ {1 \over n(n + 10)}  =  { 1 \over 10 } \cdot \left( { 1 \over n } - { 1 \over {n + 10} } \right)$$
+
+则原题：
+
+$$ {1 \over 1 \cdot 11} + {1 \over 11 \cdot 21} + {1 \over 21 \cdot 31} + ... + {1 \over 2011 \cdot 2021} $$
+
+$$
+\begin{align}
+&=  { { 1 \over 10 } \cdot \left( 1 - {1 \over 11} \right) + { 1 \over 10 } \cdot \left( {1 \over 11} - {1 \over 21} \right) + { 1 \over 10 } \cdot \left( {1 \over 21} - {1 \over 31} \right) + ... + { 1 \over 10 } \cdot \left( {1 \over 2011} - {1 \over 2021} \right) }\\
+&=  { { 1 \over 10 } \cdot \left( 1 - {1 \over 11} + {1 \over 11} - {1 \over 21} + {1 \over 21} - {1 \over 31} + ... + {1 \over 2011} - {1 \over 2021} \right) }\\
+&=  { { 1 \over 10 } \cdot \left( 1 - {1 \over 2021} \right) }\\
+&=  { 202 \over 2021} 
+\end{align}
+$$
+
+## 推论
+
+根据前一题中的：
+
+$$ {1 \over n (n + 1)} =  {1 \over n} - {1 \over (n + 1)} $$
+
+与本题中的：
+
+$$ {1 \over n(n + 10)}  =  { 1 \over 10 } \cdot \left( { 1 \over n } - { 1 \over {n + 10} } \right)$$
+
+似乎可以推导出：
+
+$$ {1 \over n(n + k)}  =  { 1 \over k } \cdot \left( { 1 \over n } - { 1 \over {n + k} } \right)$$

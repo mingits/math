@@ -9,17 +9,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="题目" />
 <meta property="og:description" content="题目" />
-<link rel="canonical" href="/math/2021-09-23/extra-credit/math-exercise-2" />
-<meta property="og:url" content="/math/2021-09-23/extra-credit/math-exercise-2" />
+<link rel="canonical" href="http://localhost:4000/math/2021-09-23/extra-credit/math-exercise-2" />
+<meta property="og:url" content="http://localhost:4000/math/2021-09-23/extra-credit/math-exercise-2" />
 <meta property="og:site_name" content="数学题集" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-09-23T21:05:00+08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="20210923 附加题二" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"20210923 附加题二","dateModified":"2021-09-23T21:05:00+08:00","datePublished":"2021-09-23T21:05:00+08:00","url":"/math/2021-09-23/extra-credit/math-exercise-2","mainEntityOfPage":{"@type":"WebPage","@id":"/math/2021-09-23/extra-credit/math-exercise-2"},"description":"题目","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","headline":"20210923 附加题二","dateModified":"2021-09-23T21:05:00+08:00","datePublished":"2021-09-23T21:05:00+08:00","url":"http://localhost:4000/math/2021-09-23/extra-credit/math-exercise-2","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/math/2021-09-23/extra-credit/math-exercise-2"},"description":"题目","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/math/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="/math/feed.xml" title="数学题集" />
+<link rel="stylesheet" href="/math/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/math/feed.xml" title="数学题集" />
 </head>
 <body><header class="site-header">
 
@@ -50,9 +50,55 @@
   <div class="post-content e-content" itemprop="articleBody">
     <h2 id="题目">题目</h2>
 
-\[{1 \over 1 * 11} + {1 \over 11 * 21} + {1 \over 21 * 31} + ... + {1 \over 2011 * 2021}\]
+\[{1 \over 1 \cdot 11} + {1 \over 11 \cdot 21} + {1 \over 21 \cdot 31} + ... + {1 \over 2011 \cdot 2021}\]
 
 <h2 id="解答">解答</h2>
+
+<p>此题中的多项式中每个单项，可以写成：</p>
+
+\[1 \over n(n + 10)\]
+
+<p><a href="/math/2021-09-23/extra-credit/math-exercise-1">上一题</a>中所使用的公式 ( \({\frac{1}{n(n + 1)}} = {\frac{1}{n}} - {\frac{1}{n + 1}}\) ) 与本题中的 \(1 \over n(n + 10)\) 颇为形似。故该式可推导为：</p>
+
+<blockquote>
+
+\[\begin{align}
+{ 1 \over n (n + 10) } 
+&amp;= { { ( 10 + n - n ) \over {n (n + 10)}} \cdot { 1 \over 10 } } \\
+&amp;= { { {(n + 10) - n} \over {n (n + 10)} } \cdot { 1 \over 10 } } \\
+&amp;= { \left({ (n + 10) \over n (n + 10) } - { n \over n (n + 10) }\right) \cdot { 1 \over 10 } } \\
+&amp;= \left( { 1 \over n } - { 1 \over {n + 10} } \right) \cdot { 1 \over 10 }
+\end{align}\]
+</blockquote>
+
+<p>故有：</p>
+
+\[{1 \over n(n + 10)}  =  { 1 \over 10 } \cdot \left( { 1 \over n } - { 1 \over {n + 10} } \right)\]
+
+<p>则原题：</p>
+
+\[{1 \over 1 \cdot 11} + {1 \over 11 \cdot 21} + {1 \over 21 \cdot 31} + ... + {1 \over 2011 \cdot 2021}\]
+
+\[\begin{align}
+&amp;=  { { 1 \over 10 } \cdot \left( 1 - {1 \over 11} \right) + { 1 \over 10 } \cdot \left( {1 \over 11} - {1 \over 21} \right) + { 1 \over 10 } \cdot \left( {1 \over 21} - {1 \over 31} \right) + ... + { 1 \over 10 } \cdot \left( {1 \over 2011} - {1 \over 2021} \right) }\\
+&amp;=  { { 1 \over 10 } \cdot \left( 1 - {1 \over 11} + {1 \over 11} - {1 \over 21} + {1 \over 21} - {1 \over 31} + ... + {1 \over 2011} - {1 \over 2021} \right) }\\
+&amp;=  { { 1 \over 10 } \cdot \left( 1 - {1 \over 2021} \right) }\\
+&amp;=  { 202 \over 2021} 
+\end{align}\]
+
+<h2 id="推论">推论</h2>
+
+<p>根据前一题中的：</p>
+
+\[{1 \over n (n + 1)} =  {1 \over n} - {1 \over (n + 1)}\]
+
+<p>与本题中的：</p>
+
+\[{1 \over n(n + 10)}  =  { 1 \over 10 } \cdot \left( { 1 \over n } - { 1 \over {n + 10} } \right)\]
+
+<p>似乎可以推导出：</p>
+
+\[{1 \over n(n + k)}  =  { 1 \over k } \cdot \left( { 1 \over n } - { 1 \over {n + k} } \right)\]
 
   </div><a class="u-url" href="/math/2021-09-23/extra-credit/math-exercise-2" hidden></a>
 </article>

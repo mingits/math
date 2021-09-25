@@ -29,8 +29,8 @@ $$ { 1 \over n (a_1 + a_n) } = {1 \over n (n + 1)} $$
 
 $$ {1 \over n (n + 1)} =  {1 \over n} - {1 \over (n + 1)} $$
 
-> 推导如下：
-> 
+推导如下：
+
 > $$
 > \begin{align}
 > { 1 \over n (n + 1) } 
@@ -47,8 +47,8 @@ $$ 1 + {1 \over 1 + 2} + {1 \over 1 + 2 + 3} + ... + {1 \over 1 + 2 + 3 + ... + 
 
 $$
 \begin{align}
-&= {1 + 2 [ ({1 \over 2} - {1 \over 3}) + ({1 \over 3} - {1 \over 4}) + ({1 \over 4} - {1 \over 5}) + ... + ({1 \over 100} - {1 \over 101}) ]} \\ 
-&= {1 + 2 ({1 \over 2} - {1 \over 101})} \\
+&= {1 + 2 \left[ \left({1 \over 2} - {1 \over 3}\right) + \left({1 \over 3} - {1 \over 4}\right) + \left({1 \over 4} - {1 \over 5}\right) + ... + \left({1 \over 100} - {1 \over 101}\right) \right]} \\ 
+&= {1 + 2 \left({1 \over 2} - {1 \over 101}\right)} \\
 &= {1 + 1 - \frac{2}{101} } \\
 &= 1 {99 \over 101} 
 \end{align}
