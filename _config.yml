@@ -37,8 +37,9 @@ plugins:
 minima:
   date_format: "%Y-%m-%d"
 
-  # generate social links in footer
+ # generate social links in footer
   # social_links:
+    # disqus: wenben
     # twitter:
     # github:
     # devto: 
